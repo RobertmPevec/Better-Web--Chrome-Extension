@@ -9,3 +9,113 @@
   <script src="popup.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>BetterWeb Popup</title>
+  <!-- You can also reference an external CSS file if you prefer -->
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f7f9fc; /* light background */
+      color: #333;
+      width: 220px; /* define a fixed width for your popup */
+      min-height: 180px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .toggle-container {
+      background: #fff;
+      border-radius: 8px;
+      padding: 0.5rem 0.8rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .toggle-container label {
+      font-size: 0.95rem;
+      color: #34495e;
+      cursor: pointer;
+    }
+
+    .toggle-container input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+
+    #openOptions {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    #openOptions:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>BetterWeb</h2>
+
+  <!-- Toggles -->
+  <div class="toggle-container">
+    <label for="enableDyslexia">Dyslexia Font</label>
+    <input type="checkbox" id="enableDyslexia" />
+  </div>
+
+  <div class="toggle-container">
+    <label for="enableDarkMode">Dark Mode</label>
+    <input type="checkbox" id="enableDarkMode" />
+  </div>
+
+  <div class="toggle-container">
+    <label for="enableColorBlind">Color Blind Mode</label>
+    <input type="checkbox" id="enableColorBlind" />
+  </div>
+
+  <!-- Settings button -->
+  <button id="openOptions">Settings</button>
+
+  <footer>
+    &copy; 2025 BetterWeb
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
