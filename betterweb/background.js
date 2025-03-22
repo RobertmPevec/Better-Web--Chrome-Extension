@@ -1,4 +1,4 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("BetterWeb installed.");
-  });
-  
+  console.log("BetterWeb installed.");
+  chrome.runtime.openOptionsPage();
+});
