@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BetterWeb</title>
+  <meta charset="UTF-8" />
+  <title>BetterWeb Popup</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9ebff; /* Pastel lavender/pink */
+      width: 220px; /* Fixed width for popup */
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 0.4rem 0;
+      padding: 0.6rem 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: #fff;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .btn-enable {
+      background-color: #81c784; /* Light green */
+    }
+    .btn-enable:hover {
+      background-color: #66bb6a; /* Darker green on hover */
+    }
+
+    .btn-disable {
+      background-color: #e57373; /* Light red */
+    }
+    .btn-disable:hover {
+      background-color: #ef5350; /* Darker red on hover */
+    }
+
+    .btn-settings {
+      background-color: #64b5f6; /* Light blue */
+    }
+    .btn-settings:hover {
+      background-color: #42a5f5; /* Darker blue on hover */
+    }
+  </style>
 </head>
 <body>
   <h2>BetterWeb</h2>
-  <button id="openOptions">Settings</button>
+
+  <!-- Three Buttons -->
+  <button class="btn btn-enable" id="enableBtn">Enable</button>
+  <button class="btn btn-disable" id="disableBtn">Disable</button>
+  <button class="btn btn-settings" id="openOptions">Settings</button>
+
   <script src="popup.js"></script>
 </body>
 </html>

@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BetterWeb Settings</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetterWeb Accessibility Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <h2>Accessibility Settings</h2>
-  <label><input type="checkbox" id="dyslexiaFont"> Use dyslexia-friendly font</label><br/>
-  <label><input type="checkbox" id="darkMode"> Enable dark mode</label><br/>
-  <button id="save">Save</button>
+  <div class="container">
+    <header>
+      <h1>Welcome to BetterWeb</h1>
+      <p>
+        Customize your browsing experience by selecting the accessibility
+        options that suit your needs.
+      </p>
+    </header>
 
+    <form id="settingsForm">
+      <section class="card">
+        <h2>Dyslexia</h2>
+        <p>
+          Enhance readability with a dyslexia-friendly font and improved
+          layout.
+        </p>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="dyslexiaFont" name="dyslexiaFont" />
+            Use Dyslexia-friendly Font
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Dark Mode</h2>
+        <p>
+          Reduce eye strain with a dark color scheme across websites.
+        </p>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="darkMode" name="darkMode" />
+            Enable Dark Mode
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Color Blindness</h2>
+        <p>
+          Adjust color contrasts and hues to optimize web content for color
+          blindness.
+        </p>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="colorBlind" name="colorBlind" />
+            Enable Color Blind Mode
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Low Vision</h2>
+        <p>
+          Increase text size and improve overall visibility.
+        </p>
+        <div class="form-group">
+          <label for="textSize">Text Size:</label>
+          <select id="textSize" name="textSize">
+            <option value="default">Default</option>
+            <option value="large">Large</option>
+            <option value="x-large">Extra Large</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="submit" id="save">Save Changes</button>
+      </div>
+    </form>
+  </div>
   <script src="options.js"></script>
 </body>
 </html>
