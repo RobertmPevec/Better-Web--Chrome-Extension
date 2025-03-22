@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BetterWeb</title>
-</head>
-<body>
-  <h2>BetterWeb</h2>
-  <button id="openOptions">Settings</button>
-  <script src="popup.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
   <meta charset="UTF-8" />
   <title>BetterWeb Popup</title>
-  <!-- You can also reference an external CSS file if you prefer -->
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
   <style>
     /* Basic Reset */
     * {
@@ -24,97 +17,62 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #f7f9fc; /* light background */
-      color: #333;
-      width: 220px; /* define a fixed width for your popup */
-      min-height: 180px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9ebff; /* Pastel lavender/pink */
+      width: 220px; /* Fixed width for popup */
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      text-align: center;
     }
 
     h2 {
-      font-size: 1.2rem;
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #6a1b9a;
+      margin-bottom: 1rem;
     }
 
-    .toggle-container {
-      background: #fff;
-      border-radius: 8px;
-      padding: 0.5rem 0.8rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.5rem;
-    }
-
-    .toggle-container label {
-      font-size: 0.95rem;
-      color: #34495e;
-      cursor: pointer;
-    }
-
-    .toggle-container input[type="checkbox"] {
-      transform: scale(1.2);
-      margin-left: 0.5rem;
-      cursor: pointer;
-    }
-
-    #openOptions {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 0.5rem 0.8rem;
-      border-radius: 5px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out;
+    /* Buttons */
+    .btn {
+      display: block;
       width: 100%;
-      margin-top: 0.5rem;
+      margin: 0.4rem 0;
+      padding: 0.6rem 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      color: #fff;
+      transition: background-color 0.2s ease-in-out;
     }
 
-    #openOptions:hover {
-      background-color: #2980b9;
+    .btn-enable {
+      background-color: #81c784; /* Light green */
+    }
+    .btn-enable:hover {
+      background-color: #66bb6a; /* Darker green on hover */
     }
 
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #999;
-      margin-top: 0.5rem;
+    .btn-disable {
+      background-color: #e57373; /* Light red */
+    }
+    .btn-disable:hover {
+      background-color: #ef5350; /* Darker red on hover */
+    }
+
+    .btn-settings {
+      background-color: #64b5f6; /* Light blue */
+    }
+    .btn-settings:hover {
+      background-color: #42a5f5; /* Darker blue on hover */
     }
   </style>
 </head>
 <body>
   <h2>BetterWeb</h2>
 
-  <!-- Toggles -->
-  <div class="toggle-container">
-    <label for="enableDyslexia">Dyslexia Font</label>
-    <input type="checkbox" id="enableDyslexia" />
-  </div>
-
-  <div class="toggle-container">
-    <label for="enableDarkMode">Dark Mode</label>
-    <input type="checkbox" id="enableDarkMode" />
-  </div>
-
-  <div class="toggle-container">
-    <label for="enableColorBlind">Color Blind Mode</label>
-    <input type="checkbox" id="enableColorBlind" />
-  </div>
-
-  <!-- Settings button -->
-  <button id="openOptions">Settings</button>
-
-  <footer>
-    &copy; 2025 BetterWeb
-  </footer>
+  <!-- Three Buttons -->
+  <button class="btn btn-enable" id="enableBtn">Enable</button>
+  <button class="btn btn-disable" id="disableBtn">Disable</button>
+  <button class="btn btn-settings" id="openOptions">Settings</button>
 
   <script src="popup.js"></script>
 </body>
