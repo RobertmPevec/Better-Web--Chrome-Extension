@@ -3,7 +3,7 @@
     "name": "BetterWeb",
     "version": "1.0",
     "description": "Enhance web accessibility with customizable user profiles and AI-powered content adjustments.",
-    "permissions": ["storage", "scripting", "activeTab"],
+    "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
@@ -15,7 +15,7 @@
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["content.js"],
+        "js": ["content.js", "tts.js", "googleTTS.js", "config.js"],
         "css": ["styles.css"]
       }
     ]
