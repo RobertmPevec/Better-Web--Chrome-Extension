@@ -49,4 +49,20 @@ BetterWeb is a Chrome extension designed to enhance web accessibility for indivi
 - **Extension API**: Chrome Extensions API (Manifest V3)
 - **AI Integrations**: Cohere API (for chatbot responses and summarized speech output)
 
-## File/Folder Structure
+
+## Project Goals and Impact
+This project was inspired by the lack of universally accessible digital spaces. BetterWeb is meant to give users with disabilities the ability to tailor and regain control over their web experience. As the internet becomes a primary gateway for services, education, and employment, this extension helps eliminate barriers in real-time.
+
+We believe AI can be used responsibly to empower individuals, not replace them. Accessibility shouldn’t be a luxury—it should be built-in. BetterWeb aims to lead by example.
+
+## Future Plans
+- Full integration of generative image enhancement for color blindness
+- Cloud-based profile syncing across devices
+- More granular control over accessibility triggers
+- Real-time accessibility audit and suggestion engine
+
+## Credits
+Built during a hackathon with a focus on human-centered design and inclusion. Inspired by community needs and tested across a variety of accessibility personas.
+
+---
+Let us know if you would like to contribute, fork, or continue evolving the future of accessible browsing.
