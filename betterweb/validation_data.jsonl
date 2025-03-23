@@ -6,3 +6,33 @@
 {"messages":[{"role":"User","content":"Use serif font for all headings"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"fontFamily\", \"value\": \"serif\"}]"}]}
 {"messages":[{"role":"User","content":"Set all links to bold and blue"},{"role":"Chatbot","content":"[{\"selector\": \"a\", \"property\": \"color\", \"value\": \"blue\"}, {\"selector\": \"a\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
 {"messages":[{"role":"User","content":"Remove all borders from elements"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"border\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Change article title font color to dark red"},{"role":"Chatbot","content":"[{\"selector\": \".mw-page-title-main\", \"property\": \"color\", \"value\": \"darkred\"}]"}]}
+{"messages":[{"role":"User","content":"Increase article title bottom margin"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"marginBottom\", \"value\": \"2em\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar background to white"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"#ffffff\"}]"}]}
+{"messages":[{"role":"User","content":"Make sidebar text italic"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontStyle\", \"value\": \"italic\"}]"}]}
+{"messages":[{"role":"User","content":"Change main content font to Times New Roman"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"fontFamily\", \"value\": \"'Times New Roman', serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set main content text color to dark gray"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"color\", \"value\": \"#444444\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between paragraphs in the article"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"marginBottom\", \"value\": \"2em\"}]"}]}
+{"messages":[{"role":"User","content":"Add a shadow to images in the content area"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"boxShadow\", \"value\": \"0px 0px 5px #888888\"}]"}]}
+{"messages":[{"role":"User","content":"Make the header text uppercase"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"textTransform\", \"value\": \"uppercase\"}]"}]}
+{"messages":[{"role":"User","content":"Increase header font size"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"fontSize\", \"value\": \"2.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease header font size"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"fontSize\", \"value\": \"1.8em\"}]"}]}
+{"messages":[{"role":"User","content":"Set footer padding to 2em"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"padding\", \"value\": \"2em\"}]"}]}
+{"messages":[{"role":"User","content":"Center footer content"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Set footer font style to italic"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"fontStyle\", \"value\": \"italic\"}]"}]}
+{"messages":[{"role":"User","content":"Change 'Did you know' section background to light green"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"backgroundColor\", \"value\": \"#ccffcc\"}]"}]}
+{"messages":[{"role":"User","content":"Increase 'Did you know' section font size"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Add extra margin above 'In the news' section"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"marginTop\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce margin below 'In the news' section"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"marginBottom\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make 'On this day' section text bold"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Set 'On this day' section font to Verdana"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd\", \"property\": \"fontFamily\", \"value\": \"Verdana, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Increase overall page brightness"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"filter\", \"value\": \"brightness(110%)\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease overall page brightness"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"filter\", \"value\": \"brightness(90%)\"}]"}]}
+{"messages":[{"role":"User","content":"Make blockquotes italic"},{"role":"Chatbot","content":"[{\"selector\": \"blockquote\", \"property\": \"fontStyle\", \"value\": \"italic\"}]"}]}
+{"messages":[{"role":"User","content":"Set blockquote text color to #555555"},{"role":"Chatbot","content":"[{\"selector\": \"blockquote\", \"property\": \"color\", \"value\": \"#555555\"}]"}]}
+{"messages":[{"role":"User","content":"Increase table padding"},{"role":"Chatbot","content":"[{\"selector\": \"table\", \"property\": \"padding\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Set table border to 1px solid #ccc"},{"role":"Chatbot","content":"[{\"selector\": \"table\", \"property\": \"border\", \"value\": \"1px solid #ccc\"}]"}]}
+{"messages":[{"role":"User","content":"Increase list item font size"},{"role":"Chatbot","content":"[{\"selector\": \"li\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Remove underline from links"},{"role":"Chatbot","content":"[{\"selector\": \"a\", \"property\": \"textDecoration\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Round all images' corners"},{"role":"Chatbot","content":"[{\"selector\": \"img\", \"property\": \"borderRadius\", \"value\": \"10px\"}]"}]}
+{"messages":[{"role":"User","content":"Set navigation item font size to 1em"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontSize\", \"value\": \"1em\"}]"}]}

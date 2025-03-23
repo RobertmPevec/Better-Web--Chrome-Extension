@@ -36,33 +36,6 @@ function applyDyslexiaFont() {
     }
   });
   
-  
-  function isVeryDarkColor(color) {
-    const rgb = color.match(/\d+/g);
-    if (!rgb || rgb.length < 3) return false;
-    const [r, g, b] = rgb.map(Number);
-    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-    return brightness < 80; // tweak this if you want to be stricter
-  }
-  
-  
-  function getBrightness(color) {
-    const rgb = color.match(/\d+/g);
-    if (!rgb || rgb.length < 3) return 0;
-    const [r, g, b] = rgb.map(Number);
-    return (r * 299 + g * 587 + b * 114) / 1000;
-  }
-  
-  
-  function isLightColor(color){
-    const rgb = color.match(/\d+/g);
-    if(!rgb || rgb.length < 3) return false;
-    const [r, g, b] = rgb.map(Number);
-    const brightness = (r * 299 + g * 587 +  b*114)/1000;
-    return brightness > 180;
-  
-  }
-  
   function removeDarkMode() {
     document.body.style.backgroundColor = '';
     document.body.style.color = '';
@@ -71,7 +44,7 @@ function applyDyslexiaFont() {
 
 function applySettings(settings) {
   settings.dyslexiaFont ? applyDyslexiaFont() : removeDyslexiaFont();
-  settings.darkMode ? applyDarkMode() : removeDarkMode();
+//   settings.darkMode ? applyDarkMode() : removeDarkMode();
 }
 
 // On initial load, get settings from chrome.storage

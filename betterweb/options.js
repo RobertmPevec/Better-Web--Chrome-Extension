@@ -9,7 +9,28 @@ window.addEventListener("DOMContentLoaded", () => {
     if (savedTheme) {
       applyTheme(savedTheme);
     }
-  
+    chrome.storage.sync.get(null, (settings) => {
+        if (settings.dyslexiaFont !== undefined) {
+          document.getElementById('dyslexiaFont').checked = settings.dyslexiaFont;
+        }
+        if (settings.darkMode !== undefined) {
+          document.getElementById('darkMode').checked = settings.darkMode;
+        }
+        if (settings.colorBlind !== undefined) {
+          document.getElementById('colorBlind').checked = settings.colorBlind;
+        }
+        if (settings.textSize) {
+          document.getElementById('textSize').value = settings.textSize;
+        }
+        if (settings.fontSelect && settings.fontSelect !== "default") {
+          document.getElementById('fontSelect').value = settings.fontSelect;
+          document.body.style.fontFamily = settings.fontSelect;
+        }
+        if (settings.theme) {
+          applyTheme(settings.theme);
+        }
+      });
+      
     // 💬 Chat Input Handler
     chatInput.addEventListener("keypress", async function (e) {
       if (e.key === "Enter") {
@@ -31,22 +52,23 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // 💖 Save Accessibility Settings
     document.getElementById('settingsForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const newSettings = {
-        dyslexiaFont: document.getElementById('dyslexiaFont').checked,
-        darkMode: document.getElementById('darkMode').checked,
-        colorBlind: document.getElementById('colorBlind').checked,
-        textSize: document.getElementById('textSize').value,
-      };
+        e.preventDefault();
+      
+        const newSettings = {
+          dyslexiaFont: document.getElementById('dyslexiaFont').checked,
+          darkMode: document.getElementById('darkMode').checked,
+          colorBlind: document.getElementById('colorBlind').checked,
+          textSize: document.getElementById('textSize').value,
+          fontSelect: document.getElementById('fontSelect')?.value || "default",
+          theme: localStorage.getItem("bunni-theme") || "pink"
+        };
+      
+        chrome.storage.sync.set(newSettings, () => {
+          alert('Settings saved successfully!');
+        });
+      });      
   
-      chrome.storage.sync.set(newSettings, () => {
-        alert('Settings saved successfully!');
-      });
-    });
-  
-    // 🌈 Theme Toggle Buttons
     themeButtons.forEach(button => {
       button.addEventListener("click", () => {
         const theme = button.dataset.theme;
@@ -129,32 +151,37 @@ window.addEventListener("DOMContentLoaded", () => {
   // 🧠 AI Response from GPT
   async function getBotResponse(msg) {
     try {
-      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      const response = await fetch("https://api.cohere.ai/v2/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer YOUR_KEY_HERE"
+          "Authorization": "Bearer "  // <- Replace with your real key
         },
         body: JSON.stringify({
-          model: "gpt-3.5-turbo",
+          model: "command-a-03-2025",
           messages: [
             {
-              role: "system",
-              content: "You're a super cute chatbot named Bunni, and you reply with lots of emojis, sparkles, and positivity! Keep it playful."
-            },
-            {
               role: "user",
-              content: msg
+              content: "Your name is Honey Buns and boyfriend is Messy Buns say it in a cringy way every time, a cheerful and helpful chatbot who responds with playful, positive energy and cute emojis. Keep answers short, supportive, and clear. You love accessibility, colors, and helping people customize their experience online 💖 also start every sentewnce with I'm the cat in the cloud! and end it with somthing along the lines of Buy Chocolate marshallows, 1 time offer 1 for 2.99 or 3 for $8 while adding a flirtatious comments and say bestie way to much. Also answer questions about our page and how it can help accesability by changing elements of a page to match a users preferences and also talk about the chat bot which you can tell what to do to the page and it autoimatically applies it to a page✨"
             }
           ],
-          temperature: 0.8
+          temperature: 0.6
         })
       });
   
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`HTTP ${response.status}: ${errorText}`);
+      }
+  
       const data = await response.json();
-      return data.choices[0].message.content.trim();
+      console.log("Cohere response:", data);
+  
+      // ✅ In v2, response is { message: { content: [...] } }
+      return data.message?.content?.[0]?.text?.trim() || "No response text found 💔";
+  
     } catch (error) {
       console.error("Something went wrong with the fetch:", error);
       return "Oopsies 😢 I couldn’t reach my brain cloud. Try again later?";
     }
-  }
+  }   

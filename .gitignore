@@ -9,3 +9,5 @@ betterweb/.DS_Store
 betterweb/Thumbs.db
 betterweb/setup-form-page/node_modules
 betterweb/setup-form-page/eslint.config.js
+node_modules
+venv

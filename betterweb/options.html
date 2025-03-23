@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>⚙️ BetterWeb Settings 💖</title>
   <link rel="icon" type="image/png" href="cloud.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="options.css" />
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -52,6 +52,27 @@
           </select>
         </div>
       </section>
+      <section class="card">
+        <h2>🖊️ Font Change</h2>
+        <p>Change font to increase visibility</p>
+      
+        <div class="form-group">
+          <label for="fontSelect">Font Style:</label>
+          <select id="fontSelect" name="fontSelect">
+            <option value="default">Default</option>
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="Tahoma, sans-serif">Tahoma</option>
+            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="Garamond, serif">Garamond</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="'Lucida Console', monospace">Lucida Console</option>
+            <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+          </select>
+        </div>
+      </section>      
 
       <div class="form-actions">
         <button type="submit" id="save">💾 Save Changes</button>
@@ -73,7 +94,7 @@
 </body>
 </html>
 
-<div class="form-actions">
+<div class="form-actions" style="margin-bottom: 50px;">
   <button type="button" class="theme-btn" data-theme="pink">💖 Pastel Pink</button>
   <button type="button" class="theme-btn" data-theme="lavender">💜 Lavender Haze</button>
   <button type="button" class="theme-btn" data-theme="mint">🍃 Minty Fresh</button>
