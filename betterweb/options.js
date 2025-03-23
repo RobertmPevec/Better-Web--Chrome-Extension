@@ -222,3 +222,66 @@ function loadPreferences() {
     }
   });
 }
+// Theme Setup
+const themeButtons = document.querySelectorAll(".theme-btn");
+
+// Apply saved theme on load
+const savedTheme = localStorage.getItem("bunni-theme");
+if (savedTheme) {
+  applyTheme(savedTheme);
+}
+
+themeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const theme = button.dataset.theme;
+    applyTheme(theme);
+  });
+});
+
+function applyTheme(theme) {
+  const root = document.documentElement;
+
+  if (theme === "pink") {
+    root.style.setProperty("--bg-color", "#fff7fc");
+    root.style.setProperty("--card-bg", "#ffe0f0");
+    root.style.setProperty("--header-color", "#ff6fa7");
+    root.style.setProperty("--button-color", "#ff9aa2");
+    root.style.setProperty("--button-hover", "#ff6f91");
+    root.style.setProperty("--bubble-bg", "#fff0fa");
+    root.style.setProperty("--user-bubble-bg", "#ffcee0");
+  } else if (theme === "lavender") {
+    root.style.setProperty("--bg-color", "#f3e5f5");
+    root.style.setProperty("--card-bg", "#e1bee7");
+    root.style.setProperty("--header-color", "#8e24aa");
+    root.style.setProperty("--button-color", "#ba68c8");
+    root.style.setProperty("--button-hover", "#ab47bc");
+    root.style.setProperty("--bubble-bg", "#f8e3f9");
+    root.style.setProperty("--user-bubble-bg", "#e1bee7");
+  } else if (theme === "mint") {
+    root.style.setProperty("--bg-color", "#e0f7fa");
+    root.style.setProperty("--card-bg", "#b2ebf2");
+    root.style.setProperty("--header-color", "#00acc1");
+    root.style.setProperty("--button-color", "#4dd0e1");
+    root.style.setProperty("--button-hover", "#26c6da");
+    root.style.setProperty("--bubble-bg", "#e0ffff");
+    root.style.setProperty("--user-bubble-bg", "#b2ebf2");
+  } else if (theme === "peach") {
+    root.style.setProperty("--bg-color", "#fff3e0");
+    root.style.setProperty("--card-bg", "#ffe0b2");
+    root.style.setProperty("--header-color", "#fb8c00");
+    root.style.setProperty("--button-color", "#ffb74d");
+    root.style.setProperty("--button-hover", "#ffa726");
+    root.style.setProperty("--bubble-bg", "#fff8e1");
+    root.style.setProperty("--user-bubble-bg", "#ffe0b2");
+  } else if (theme === "sky") {
+    root.style.setProperty("--bg-color", "#e3f2fd");
+    root.style.setProperty("--card-bg", "#bbdefb");
+    root.style.setProperty("--header-color", "#1e88e5");
+    root.style.setProperty("--button-color", "#64b5f6");
+    root.style.setProperty("--button-hover", "#42a5f5");
+    root.style.setProperty("--bubble-bg", "#e1f5fe");
+    root.style.setProperty("--user-bubble-bg", "#bbdefb");
+  }
+
+  localStorage.setItem("bunni-theme", theme);
+}
