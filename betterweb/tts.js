@@ -36,7 +36,7 @@ async function getCohereSpokenVersion(text) {
           messages: [
             {
               role: "user",
-              content: `Summarize the following text for someone with ADHD or Dyslexia. Use short, simple sentences. Avoid complex words. Break information into small, clear chunks.
+              content: `Summarize the following text for someone with ADHD or Dyslexia. Use short, simple sentences. Avoid complex words but do not introduce new information. If it's just a simple sentence let it be. Break information into small, clear chunks.
 :\n\n${text}`
             }
           ]

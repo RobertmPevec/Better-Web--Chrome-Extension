@@ -1,7 +1,7 @@
 
 
 async function speakWithGoogleTTS(text) {
-    const apiKey = GOOGLE_API_KEY; // Replace this
+    const apiKey = GOOGLE_API_KEY; 
     const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`, {
       method: "POST",
       headers: {
