@@ -36,3 +36,171 @@
 {"messages":[{"role":"User","content":"Center the main title"},{"role":"Chatbot","content":"[{\"selector\": \"h1\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
 {"messages":[{"role":"User","content":"Make paragraphs easier to read"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"lineHeight\", \"value\": \"1.8\"}]"}]}
 {"messages":[{"role":"User","content":"Change heading font to Georgia"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"fontFamily\", \"value\": \"Georgia, serif\"}]"}]}
+{"messages":[{"role":"User","content":"Change background to light blue"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#ADD8E6\"}]"}]}
+{"messages":[{"role":"User","content":"Increase line spacing"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"lineHeight\", \"value\": \"1.8\"}]"}]}
+{"messages":[{"role":"User","content":"Increase letter spacing"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"letterSpacing\", \"value\": \"0.15em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase word spacing"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"wordSpacing\", \"value\": \"0.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Add more padding to paragraphs"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"padding\", \"value\": \"1rem\"}]"}]}
+{"messages":[{"role":"User","content":"Change background to soft lavender"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#E6E6FA\"}]"}]}
+{"messages":[{"role":"User","content":"Increase paragraph spacing"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"marginBottom\", \"value\": \"1.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the featured image larger"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"width\", \"value\": \"200px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase featured image size further"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"width\", \"value\": \"250px\"}]"}]}
+{"messages":[{"role":"User","content":"Make featured article text larger"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa\", \"property\": \"fontSize\", \"value\": \"1.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Widen the main content area"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"maxWidth\", \"value\": \"900px\"}]"}]}
+{"messages":[{"role":"User","content":"Narrow the main content area"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"maxWidth\", \"value\": \"700px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between paragraphs in the article"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"marginBottom\", \"value\": \"1.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the main title more prominent"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"fontSize\", \"value\": \"2.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Change the main title color to dark blue"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"color\", \"value\": \"darkblue\"}]"}]}
+{"messages":[{"role":"User","content":"Change sidebar background to light grey"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"#f0f0f0\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing in navigation menu"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"padding\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce spacing in navigation menu"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"padding\", \"value\": \"0.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Change the footer background to dark grey"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"backgroundColor\", \"value\": \"#333333\"}]"}]}
+{"messages":[{"role":"User","content":"Change footer text color to white"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"color\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Make the search box border thicker"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"borderWidth\", \"value\": \"2px\"}]"}]}
+{"messages":[{"role":"User","content":"Round the corners of the search box"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"borderRadius\", \"value\": \"10px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase padding of the search input"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"padding\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the 'Recent changes' list text smaller"},{"role":"Chatbot","content":"[{\"selector\": \"#articlecount li\", \"property\": \"fontSize\", \"value\": \"0.8em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase the font size of 'Recent changes' links"},{"role":"Chatbot","content":"[{\"selector\": \"#articlecount li\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the main menu text bold"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu .vector-pinnable-header-label\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Change main menu text color to red"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu .vector-pinnable-header-label\", \"property\": \"color\", \"value\": \"red\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between main menu list items"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu ul li\", \"property\": \"marginBottom\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the entire page width narrower"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"maxWidth\", \"value\": \"1200px\"}]"}]}
+{"messages":[{"role":"User","content":"Make the entire page width wider"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"maxWidth\", \"value\": \"1600px\"}]"}]}
+{"messages":[{"role":"User","content":"Change header background to light yellow"},{"role":"Chatbot","content":"[{\"selector\": \".vector-header\", \"property\": \"backgroundColor\", \"value\": \"#FFFFE0\"}]"}]}
+{"messages":[{"role":"User","content":"Change header text color to dark green"},{"role":"Chatbot","content":"[{\"selector\": \".vector-header\", \"property\": \"color\", \"value\": \"darkgreen\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing above the header"},{"role":"Chatbot","content":"[{\"selector\": \".vector-header\", \"property\": \"marginTop\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease spacing above the header"},{"role":"Chatbot","content":"[{\"selector\": \".vector-header\", \"property\": \"marginTop\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase image size in content area"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"maxWidth\", \"value\": \"100%\"}]"}]}
+{"messages":[{"role":"User","content":"Add a border to images in content area"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"border\", \"value\": \"2px solid #000\"}]"}]}
+{"messages":[{"role":"User","content":"Remove border from images"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"border\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Increase margin around images"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"margin\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease margin around images"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text img\", \"property\": \"margin\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make navigation links uppercase"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"textTransform\", \"value\": \"uppercase\"}]"}]}
+{"messages":[{"role":"User","content":"Make navigation links lowercase"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"textTransform\", \"value\": \"lowercase\"}]"}]}
+{"messages":[{"role":"User","content":"Increase navigation link font size"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontSize\", \"value\": \"1.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease navigation link font size"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Change navigation font to Arial"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"fontFamily\", \"value\": \"Arial, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set article content background to light grey"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"backgroundColor\", \"value\": \"#f8f8f8\"}]"}]}
+{"messages":[{"role":"User","content":"Add padding to article content"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"padding\", \"value\": \"1rem\"}]"}]}
+{"messages":[{"role":"User","content":"Remove padding from article content"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"padding\", \"value\": \"0\"}]"}]}
+{"messages":[{"role":"User","content":"Increase line height in article content"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"lineHeight\", \"value\": \"1.8\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease line height in article content"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"lineHeight\", \"value\": \"1.2\"}]"}]}
+{"messages":[{"role":"User","content":"Make the article title bold"},{"role":"Chatbot","content":"[{\"selector\": \".mw-page-title-main\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Change article title font to Times New Roman"},{"role":"Chatbot","content":"[{\"selector\": \".mw-page-title-main\", \"property\": \"fontFamily\", \"value\": \"'Times New Roman', serif\"}]"}]}
+{"messages":[{"role":"User","content":"Center the article title"},{"role":"Chatbot","content":"[{\"selector\": \".mw-page-title-main\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Set article title font size to 2em"},{"role":"Chatbot","content":"[{\"selector\": \".mw-page-title-main\", \"property\": \"fontSize\", \"value\": \"2em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between sidebar items"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"marginBottom\", \"value\": \"0.7em\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce spacing between sidebar items"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"marginBottom\", \"value\": \"0.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar font to Verdana"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"fontFamily\", \"value\": \"Verdana, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Highlight sidebar with light blue background"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"#E0F7FA\"}]"}]}
+{"messages":[{"role":"User","content":"Remove sidebar background"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"transparent\"}]"}]}
+{"messages":[{"role":"User","content":"Increase footer font size"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease footer font size"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"fontSize\", \"value\": \"0.7em\"}]"}]}
+{"messages":[{"role":"User","content":"Add padding to footer"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"padding\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Remove padding from footer"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"padding\", \"value\": \"0\"}]"}]}
+{"messages":[{"role":"User","content":"Center footer text"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Change footer background to dark grey"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"backgroundColor\", \"value\": \"#333333\"}]"}]}
+{"messages":[{"role":"User","content":"Change footer text color to light grey"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"color\", \"value\": \"#CCCCCC\"}]"}]}
+{"messages":[{"role":"User","content":"Set article content font to Helvetica"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"fontFamily\", \"value\": \"Helvetica, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Make featured article section background light yellow"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa\", \"property\": \"backgroundColor\", \"value\": \"#FFFFE0\"}]"}]}
+{"messages":[{"role":"User","content":"Increase padding in featured article section"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa\", \"property\": \"padding\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Make the navigation bar background darker"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"#333333\"}]"}]}
+{"messages":[{"role":"User","content":"Set navigation bar text color to white"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"color\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Increase navigation menu item spacing"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"marginBottom\", \"value\": \"0.7em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease navigation menu item spacing"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"marginBottom\", \"value\": \"0.3em\"}]"}]}
+{"messages":[{"role":"User","content":"Change logo size to 60px"},{"role":"Chatbot","content":"[{\"selector\": \".mw-logo-icon\", \"property\": \"width\", \"value\": \"60px\"}]"}]}
+{"messages":[{"role":"User","content":"Change logo size to 70px"},{"role":"Chatbot","content":"[{\"selector\": \".mw-logo-icon\", \"property\": \"width\", \"value\": \"70px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing around the logo"},{"role":"Chatbot","content":"[{\"selector\": \".mw-logo\", \"property\": \"margin\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease spacing around the logo"},{"role":"Chatbot","content":"[{\"selector\": \".mw-logo\", \"property\": \"margin\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set main content area font to Arial"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"fontFamily\", \"value\": \"Arial, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set main content area font to Tahoma"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"fontFamily\", \"value\": \"Tahoma, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Increase article text font size"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"fontSize\", \"value\": \"1.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease article text font size"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text p\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Change article text color to dark gray"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"color\", \"value\": \"#333333\"}]"}]}
+{"messages":[{"role":"User","content":"Set article text background to light gray"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"backgroundColor\", \"value\": \"#f8f8f8\"}]"}]}
+{"messages":[{"role":"User","content":"Increase article margins"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"margin\", \"value\": \"2rem\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease article margins"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"margin\", \"value\": \"1rem\"}]"}]}
+{"messages":[{"role":"User","content":"Change header font to Comic Sans"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header\", \"property\": \"fontFamily\", \"value\": \"'Comic Sans MS', cursive, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Make header text italic"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"fontStyle\", \"value\": \"italic\"}]"}]}
+{"messages":[{"role":"User","content":"Underline header text"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"textDecoration\", \"value\": \"underline\"}]"}]}
+{"messages":[{"role":"User","content":"Bold header text"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header h1\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Increase header padding"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header\", \"property\": \"padding\", \"value\": \"1.5rem\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease header padding"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header\", \"property\": \"padding\", \"value\": \"0.5rem\"}]"}]}
+{"messages":[{"role":"User","content":"Set header background to navy"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header\", \"property\": \"backgroundColor\", \"value\": \"navy\"}]"}]}
+{"messages":[{"role":"User","content":"Set header text color to white"},{"role":"Chatbot","content":"[{\"selector\": \"header.mw-body-header\", \"property\": \"color\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Increase search input width"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"width\", \"value\": \"300px\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease search input width"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"width\", \"value\": \"200px\"}]"}]}
+{"messages":[{"role":"User","content":"Change search input border color to red"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"borderColor\", \"value\": \"red\"}]"}]}
+{"messages":[{"role":"User","content":"Change search input font to Courier"},{"role":"Chatbot","content":"[{\"selector\": \"#searchInput\", \"property\": \"fontFamily\", \"value\": \"Courier, monospace\"}]"}]}
+{"messages":[{"role":"User","content":"Increase search button size"},{"role":"Chatbot","content":"[{\"selector\": \"button.cdx-button\", \"property\": \"fontSize\", \"value\": \"1.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Change search button text to uppercase"},{"role":"Chatbot","content":"[{\"selector\": \"button.cdx-button\", \"property\": \"textTransform\", \"value\": \"uppercase\"}]"}]}
+{"messages":[{"role":"User","content":"Set footer font to Verdana"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"fontFamily\", \"value\": \"Verdana, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set footer background to black"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"backgroundColor\", \"value\": \"#000000\"}]"}]}
+{"messages":[{"role":"User","content":"Change footer text color to light blue"},{"role":"Chatbot","content":"[{\"selector\": \"#footer\", \"property\": \"color\", \"value\": \"#ADD8E6\"}]"}]}
+{"messages":[{"role":"User","content":"Center footer links"},{"role":"Chatbot","content":"[{\"selector\": \"#footer ul\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between footer links"},{"role":"Chatbot","content":"[{\"selector\": \"#footer ul li\", \"property\": \"margin\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce spacing between footer links"},{"role":"Chatbot","content":"[{\"selector\": \"#footer ul li\", \"property\": \"margin\", \"value\": \"0.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Make sidebar text uppercase"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"textTransform\", \"value\": \"uppercase\"}]"}]}
+{"messages":[{"role":"User","content":"Make sidebar text bold"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar background to #fafafa"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"backgroundColor\", \"value\": \"#fafafa\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar text color to #333333"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"color\", \"value\": \"#333333\"}]"}]}
+{"messages":[{"role":"User","content":"Increase sidebar padding"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"padding\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease sidebar padding"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel\", \"property\": \"padding\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar font size to 1.1em"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar font size to 0.9em"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel a\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Add a border to sidebar items"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"border\", \"value\": \"1px solid #ccc\"}]"}]}
+{"messages":[{"role":"User","content":"Remove border from sidebar items"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"border\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Change border color of sidebar items to blue"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"borderColor\", \"value\": \"blue\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar item background to light green"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"backgroundColor\", \"value\": \"#E0F7FA\"}]"}]}
+{"messages":[{"role":"User","content":"Set sidebar item margin to 0.3em"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"margin\", \"value\": \"0.3em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase sidebar item margin to 0.7em"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-panel ul li\", \"property\": \"margin\", \"value\": \"0.7em\"}]"}]}
+{"messages":[{"role":"User","content":"Set content area background to white"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Change content area text color to #444444"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"color\", \"value\": \"#444444\"}]"}]}
+{"messages":[{"role":"User","content":"Increase content area padding to 2rem"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"padding\", \"value\": \"2rem\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease content area padding to 0.5rem"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"padding\", \"value\": \"0.5rem\"}]"}]}
+{"messages":[{"role":"User","content":"Set content area max width to 800px"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"maxWidth\", \"value\": \"800px\"}]"}]}
+{"messages":[{"role":"User","content":"Set content area max width to 1000px"},{"role":"Chatbot","content":"[{\"selector\": \"#mw-content-text\", \"property\": \"maxWidth\", \"value\": \"1000px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase article title size to 3em"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"fontSize\", \"value\": \"3em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease article title size to 1.5em"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"fontSize\", \"value\": \"1.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set article title font to Impact"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"fontFamily\", \"value\": \"Impact, sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set article title text transform to uppercase"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"textTransform\", \"value\": \"uppercase\"}]"}]}
+{"messages":[{"role":"User","content":"Make article title underlined"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"textDecoration\", \"value\": \"underline\"}]"}]}
+{"messages":[{"role":"User","content":"Change article title color to crimson"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"color\", \"value\": \"crimson\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between article title and content"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"marginBottom\", \"value\": \"1.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease spacing between article title and content"},{"role":"Chatbot","content":"[{\"selector\": \"#firstHeading\", \"property\": \"marginBottom\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Change featured image border to 5px solid #000"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"border\", \"value\": \"5px solid #000\"}]"}]}
+{"messages":[{"role":"User","content":"Remove border from featured image"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"border\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Increase featured image margin to 1.5em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img\", \"property\": \"margin\", \"value\": \"1.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease featured image margin to 0.5em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img\", \"property\": \"margin\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set featured image width to 300px"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"width\", \"value\": \"300px\"}]"}]}
+{"messages":[{"role":"User","content":"Set featured image width to 350px"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"width\", \"value\": \"350px\"}]"}]}
+{"messages":[{"role":"User","content":"Change featured image filter to grayscale(100%)"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"filter\", \"value\": \"grayscale(100%)\"}]"}]}
+{"messages":[{"role":"User","content":"Remove featured image filter"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img img\", \"property\": \"filter\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between featured image and text"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img\", \"property\": \"marginRight\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease spacing between featured image and text"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa-img\", \"property\": \"marginRight\", \"value\": \"0.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Set featured image caption font size to 0.9em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa .thumbcaption\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Set featured image caption font size to 1.1em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa .thumbcaption\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Change featured image caption text color to #666666"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-tfa .thumbcaption\", \"property\": \"color\", \"value\": \"#666666\"}]"}]}
+{"messages":[{"role":"User","content":"Set 'Did you know' section background to #f0f0f0"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"backgroundColor\", \"value\": \"#f0f0f0\"}]"}]}
+{"messages":[{"role":"User","content":"Set 'Did you know' section font size to 1.2em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"fontSize\", \"value\": \"1.2em\"}]"}]}
+{"messages":[{"role":"User","content":"Increase margin around 'Did you know' section"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"margin\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease margin around 'Did you know' section"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-dyk\", \"property\": \"margin\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set 'In the news' section background to #e0e0e0"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"backgroundColor\", \"value\": \"#e0e0e0\"}]"}]}
+{"messages":[{"role":"User","content":"Change 'In the news' section font color to #000080"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"color\", \"value\": \"#000080\"}]"}]}
+{"messages":[{"role":"User","content":"Increase padding in 'In the news' section to 1em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"padding\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease padding in 'In the news' section to 0.5em"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-itn\", \"property\": \"padding\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Make 'On this day' section font italic"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd\", \"property\": \"fontStyle\", \"value\": \"italic\"}]"}]}
+{"messages":[{"role":"User","content":"Set 'On this day' section text transform to capitalize"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd\", \"property\": \"textTransform\", \"value\": \"capitalize\"}]"}]}
+{"messages":[{"role":"User","content":"Increase margin below 'On this day' header"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd-h2\", \"property\": \"marginBottom\", \"value\": \"1em\"}]"}]}
+{"messages":[{"role":"User","content":"Decrease margin below 'On this day' header"},{"role":"Chatbot","content":"[{\"selector\": \"#mp-otd-h2\", \"property\": \"marginBottom\", \"value\": \"0.5em\"}]"}]}
+{"messages":[{"role":"User","content":"Set footer icons size to 30px"},{"role":"Chatbot","content":"[{\"selector\": \"#footer img\", \"property\": \"width\", \"value\": \"30px\"}]"}]}
+{"messages":[{"role":"User","content":"Increase spacing between footer icons"},{"role":"Chatbot","content":"[{\"selector\": \"#footer ul li\", \"property\": \"margin\", \"value\": \"0.6em\"}]"}]}
+{"messages":[{"role":"User","content":"Change footer icon filter to invert(1)"},{"role":"Chatbot","content":"[{\"selector\": \"#footer img\", \"property\": \"filter\", \"value\": \"invert(1)\"}]"}]}
+{"messages":[{"role":"User","content":"Remove filter from footer icons"},{"role":"Chatbot","content":"[{\"selector\": \"#footer img\", \"property\": \"filter\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Set main menu font size to 1.1em"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu .vector-pinnable-header-label\", \"property\": \"fontSize\", \"value\": \"1.1em\"}]"}]}
+{"messages":[{"role":"User","content":"Set main menu font size to 0.9em"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu .vector-pinnable-header-label\", \"property\": \"fontSize\", \"value\": \"0.9em\"}]"}]}
+{"messages":[{"role":"User","content":"Make main menu background transparent"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu\", \"property\": \"backgroundColor\", \"value\": \"transparent\"}]"}]}
+{"messages":[{"role":"User","content":"Set main menu item hover background to #f0f0f0"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu li:hover\", \"property\": \"backgroundColor\", \"value\": \"#f0f0f0\"}]"}]}
+{"messages":[{"role":"User","content":"Change main menu icon color to #ff0000"},{"role":"Chatbot","content":"[{\"selector\": \"#vector-main-menu .vector-icon\", \"property\": \"color\", \"value\": \"#ff0000\"}]"}]}
+{"messages":[{"role":"User","content":"Increase overall page width to 1600px"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"maxWidth\", \"value\": \"1600px\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce overall page width to 1200px"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"maxWidth\", \"value\": \"1200px\"}]"}]}

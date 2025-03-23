@@ -15,7 +15,6 @@
   
   body {
     margin: 0;
-    font-family: 'Comic Neue', cursive;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
