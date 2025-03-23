@@ -422,6 +422,12 @@ function handleNextStep(currentStep) {
   updateProgress(currentStep + 1);
 }
 
+chrome.storage.local.set({ key: value }, function () {
+  if (chrome.runtime.lastError) {
+    console.error("Error saving data:", chrome.runtime.lastError);
+  }
+});
+
 // Handle form submission
 function submitForm() {
   // Save auto-alter experience preference
@@ -435,4 +441,3 @@ function submitForm() {
 
   window.location.href = "options.html";
 }
-/* lol */
