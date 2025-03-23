@@ -1,0 +1,8 @@
+{"messages":[{"role":"User","content":"Change all text to green"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"color\", \"value\": \"green\"}]"}]}
+{"messages":[{"role":"User","content":"Set paragraph font size to 18px"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"fontSize\", \"value\": \"18px\"}]"}]}
+{"messages":[{"role":"User","content":"Align all h2 headings to the left"},{"role":"Chatbot","content":"[{\"selector\": \"h2\", \"property\": \"textAlign\", \"value\": \"left\"}]"}]}
+{"messages":[{"role":"User","content":"Underline all headings"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"textDecoration\", \"value\": \"underline\"}]"}]}
+{"messages":[{"role":"User","content":"Add spacing under images"},{"role":"Chatbot","content":"[{\"selector\": \"img\", \"property\": \"marginBottom\", \"value\": \"1rem\"}]"}]}
+{"messages":[{"role":"User","content":"Use serif font for all headings"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"fontFamily\", \"value\": \"serif\"}]"}]}
+{"messages":[{"role":"User","content":"Set all links to bold and blue"},{"role":"Chatbot","content":"[{\"selector\": \"a\", \"property\": \"color\", \"value\": \"blue\"}, {\"selector\": \"a\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Remove all borders from elements"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"border\", \"value\": \"none\"}]"}]}
