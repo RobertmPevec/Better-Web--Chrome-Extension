@@ -1,4 +1,5 @@
-// Define functions to apply or remove each setting
+console.log("content.js is running on this page.");
+
 function applyDyslexiaFont() {
   document.body.style.fontFamily = '"OpenDyslexic", Arial, sans-serif';
 }
@@ -7,32 +8,108 @@ function removeDyslexiaFont() {
   document.body.style.fontFamily = '';
 }
 
-function applyDarkMode() {
+// Dark Mode Functions
+function applyDarkModeAdvanced() {
+  document.documentElement.style.backgroundColor = '#000'; // optional
+  document.documentElement.style.color = '#fff';
+  document.documentElement.style.filter = 'invert(1) hue-rotate(180deg)';
+
+  const media = document.querySelectorAll('img, picture, video, iframe');
+  media.forEach(el => {
+    el.style.filter = 'invert(1) hue-rotate(180deg)';
+  });
+}
+
+// Simple Dark Mode (from File 2)
+// Uses document.body style.
+function applyDarkModeSimple() {
   document.body.style.backgroundColor = '#121212';
   document.body.style.color = '#FFFFFF';
 }
 
+// removeDarkMode (same in both files)
 function removeDarkMode() {
   document.body.style.backgroundColor = '';
   document.body.style.color = '';
 }
 
-// Function to apply settings based on stored preferences
-function applySettings(settings) {
-  settings.dyslexiaFont ? applyDyslexiaFont() : removeDyslexiaFont();
-  settings.darkMode ? applyDarkMode() : removeDarkMode();
+// Additional Utility Functions (from File 1)
+function speakHighlightedText(text = null) {
+  const selection = text || window.getSelection().toString().trim();
+  if (selection.length > 0) {
+    const utterance = new SpeechSynthesisUtterance(selection);
+    utterance.lang = 'en-US';
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    speechSynthesis.speak(utterance);
+  }
 }
 
-// Initial load: Get and apply stored settings
+// Listener for SPEAK_SELECTION actions
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "SPEAK_SELECTION") {
+    speakHighlightedText();
+  }
+});
+
+// Color Utilities
+function isVeryDarkColor(color) {
+  const rgb = color.match(/\d+/g);
+  if (!rgb || rgb.length < 3) return false;
+  const [r, g, b] = rgb.map(Number);
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+  return brightness < 80; // tweak if needed
+}
+
+function getBrightness(color) {
+  const rgb = color.match(/\d+/g);
+  if (!rgb || rgb.length < 3) return 0;
+  const [r, g, b] = rgb.map(Number);
+  return (r * 299 + g * 587 + b * 114) / 1000;
+}
+
+function isLightColor(color) {
+  const rgb = color.match(/\d+/g);
+  if (!rgb || rgb.length < 3) return false;
+  const [r, g, b] = rgb.map(Number);
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+  return brightness > 180;
+}
+// Settings and Storage
+
+function applySettings(settings) {
+  settings.dyslexiaFont ? applyDyslexiaFont() : removeDyslexiaFont();
+  settings.darkMode ? applyDarkModeAdvanced() : removeDarkMode();
+}
+
+// On initial load, get settings from chrome.storage
 chrome.storage.sync.get(['dyslexiaFont', 'darkMode'], (settings) => {
   applySettings(settings);
 });
 
-// Listen for changes to update settings dynamically
+// Listen for changes in storage to update settings dynamically
 chrome.storage.onChanged.addListener((changes, areaName) => {
   if (areaName === 'sync') {
     chrome.storage.sync.get(['dyslexiaFont', 'darkMode'], (settings) => {
       applySettings(settings);
     });
+  }
+});
+
+// Cohere API Fixes Section (from File 2)
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === 'applyFix' && message.data) {
+    try {
+      const rules = typeof message.data === 'string' ? JSON.parse(message.data) : message.data;
+      rules.forEach(rule => {
+        document.querySelectorAll(rule.selector).forEach(el => {
+          el.style.setProperty(rule.property, rule.value, 'important');
+        });
+      });
+      console.log("DOM modifications applied:", rules);
+    } catch (e) {
+      console.error('Error applying fix:', e);
+    }
   }
 });
