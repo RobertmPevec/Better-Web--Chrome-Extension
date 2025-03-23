@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // The function that calls the Cohere API
     async function getAccessibilityFix(userPrompt) {
-      const apiKey = "FdSNITT5WANFBPHHXj645GonfiFZzdMyqkiZ49ha";
+      const apiKey = "";
       try {
         const response = await fetch("https://api.cohere.ai/v2/chat", {
           method: "POST",
@@ -92,3 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });  
+  openOptionsButton.addEventListener('click', () => {
+  chrome.runtime.openOptionsPage();
+});
