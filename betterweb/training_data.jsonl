@@ -1,0 +1,38 @@
+{"messages":[{"role":"User","content":"Increase font size"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontSize\", \"value\": \"150%\"}]"}]}
+{"messages":[{"role":"User","content":"Make text high contrast"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"color\", \"value\": \"#000000\"}, {\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Use high contrast colors"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#000000\"}]"}]}
+{"messages":[{"role":"User","content":"Avoid red and green"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"color\", \"value\": \"#0000FF\"}, {\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Use blue for emphasis"},{"role":"Chatbot","content":"[{\"selector\": \"strong, b\", \"property\": \"color\", \"value\": \"#0000FF\"}, {\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Bold all the text"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"fontWeight\", \"value\": \"bold\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce screen glare"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#E0E0E0\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#000000\"}]"}]}
+{"messages":[{"role":"User","content":"Increase font size for easier reading"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontSize\", \"value\": \"160%\"}]"}]}
+{"messages":[{"role":"User","content":"Remove visual clutter"},{"role":"Chatbot","content":"[{\"selector\": \"aside, footer, nav, .ads\", \"property\": \"display\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Use high contrast for older eyes"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#FFFFFF\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#000000\"}]"}]}
+{"messages":[{"role":"User","content":"Use dark mode"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#121212\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce contrast slightly"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"color\", \"value\": \"#CCCCCC\"}, {\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#121212\"}]"}]}
+{"messages":[{"role":"User","content":"Center all content"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Narrow content width"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"maxWidth\", \"value\": \"600px\"}]"}]}
+{"messages":[{"role":"User","content":"Use a dyslexia-friendly font"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontFamily\", \"value\": \"'OpenDyslexic', sans-serif\"}]"}]}
+{"messages":[{"role":"User","content":"Add more space between letters"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"letterSpacing\", \"value\": \"0.12em\"}]"}]}
+{"messages":[{"role":"User","content":"Use structured layout"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"lineHeight\", \"value\": \"1.6\"}]"}]}
+{"messages":[{"role":"User","content":"Use spaced-out numeric font"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontFamily\", \"value\": \"'Courier New', monospace\"}]"}]}
+{"messages":[{"role":"User","content":"Remove distractions"},{"role":"Chatbot","content":"[{\"selector\": \".ads, .popups, aside, nav\", \"property\": \"display\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Make text larger for ADHD"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontSize\", \"value\": \"140%\"}]"}]}
+{"messages":[{"role":"User","content":"Use clean layout"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"padding\", \"value\": \"1.5rem\"}]"}]}
+{"messages":[{"role":"User","content":"Avoid flashing lights"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"animation\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Turn on dark mode"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#111111\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#FFFFFF\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce screen glare"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"filter\", \"value\": \"brightness(80%)\"}]"}]}
+{"messages":[{"role":"User","content":"Reduce brightness"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"filter\", \"value\": \"brightness(80%)\"}]"}]}
+{"messages":[{"role":"User","content":"Use soft contrast"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"color\", \"value\": \"#DDD\"}, {\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#121212\"}]"}]}
+{"messages":[{"role":"User","content":"Remove animations"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"animation\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Make text larger and cleaner"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"fontSize\", \"value\": \"140%\"}]"}]}
+{"messages":[{"role":"User","content":"Use structured layout for APD"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"lineHeight\", \"value\": \"1.5\"}]"}]}
+{"messages":[{"role":"User","content":"Use soft, muted colors"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"backgroundColor\", \"value\": \"#f5f5f5\"}, {\"selector\": \"body\", \"property\": \"color\", \"value\": \"#000000\"}]"}]}
+{"messages":[{"role":"User","content":"Use structured layout for ASD"},{"role":"Chatbot","content":"[{\"selector\": \"body\", \"property\": \"lineHeight\", \"value\": \"1.6\"}]"}]}
+{"messages":[{"role":"User","content":"Stop scrolling animations"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"scrollBehavior\", \"value\": \"auto\"}]"}]}
+{"messages":[{"role":"User","content":"Disable all animations"},{"role":"Chatbot","content":"[{\"selector\": \"*\", \"property\": \"animation\", \"value\": \"none\"}]"}]}
+{"messages":[{"role":"User","content":"Summarize the text in this article"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"textContent\", \"value\": \"This is a summarized version of the content.\"}]"}]}
+{"messages":[{"role":"User","content":"Make all headings blue"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"color\", \"value\": \"blue\"}]"}]}
+{"messages":[{"role":"User","content":"Center the main title"},{"role":"Chatbot","content":"[{\"selector\": \"h1\", \"property\": \"textAlign\", \"value\": \"center\"}]"}]}
+{"messages":[{"role":"User","content":"Make paragraphs easier to read"},{"role":"Chatbot","content":"[{\"selector\": \"p\", \"property\": \"lineHeight\", \"value\": \"1.8\"}]"}]}
+{"messages":[{"role":"User","content":"Change heading font to Georgia"},{"role":"Chatbot","content":"[{\"selector\": \"h1, h2, h3\", \"property\": \"fontFamily\", \"value\": \"Georgia, serif\"}]"}]}

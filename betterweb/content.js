@@ -1,5 +1,4 @@
 console.log("content.js is running on this page.");
-
 function applyDyslexiaFont() {
     document.body.style.fontFamily = '"OpenDyslexic", Arial, sans-serif';
   }

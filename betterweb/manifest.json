@@ -4,14 +4,13 @@
     "version": "1.0",
     "description": "Enhance web accessibility with customizable user profiles and AI-powered content adjustments.",
     "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
     },
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "options_page": "options.html",
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
@@ -19,5 +18,4 @@
         "css": ["styles.css"]
       }
     ]
-  }
-  
+  }  
