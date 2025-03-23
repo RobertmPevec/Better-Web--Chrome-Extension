@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚙️ BetterWeb Settings 💖</title>
+    <link rel="icon" type="image/png" href="cloud.png" />
+    <link rel="stylesheet" href="options.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌸 Welcome to BetterWeb 💖</h1>
+        <p>
+          Customize your browsing experience by selecting the accessibility
+          options that suit your needs.
+        </p>
+      </header>
+
+      <form id="settingsForm">
+        <section class="card">
+          <h2>📖 Dyslexia</h2>
+          <p>
+            Enhance readability with a dyslexia-friendly font and improved
+            layout.
+          </p>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" id="dyslexiaFont" name="dyslexiaFont" />
+              Use Dyslexia-friendly Font</label
+            >
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🌙 Dark Mode</h2>
+          <p>Reduce eye strain with a dark color scheme across websites.</p>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" id="darkMode" name="darkMode" /> Enable
+              Dark Mode</label
+            >
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🌈 Color Blindness</h2>
+          <p>
+            Adjust color contrasts and hues to optimize web content for color
+            blindness.
+          </p>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" id="colorBlind" name="colorBlind" />
+              Enable Color Blind Mode</label
+            >
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>👓 Low Vision</h2>
+          <p>Increase text size and improve overall visibility.</p>
+          <div class="form-group">
+            <label for="textSize">Text Size:</label>
+            <select id="textSize" name="textSize">
+              <option value="default">Default</option>
+              <option value="large">Large</option>
+              <option value="x-large">Extra Large</option>
+            </select>
+          </div>
+        </section>
+        <section class="card">
+          <h2>🖊️ Font Change</h2>
+          <p>Change font to increase visibility</p>
+
+          <div class="form-group">
+            <label for="fontSelect">Font Style:</label>
+            <select id="fontSelect" name="fontSelect">
+              <option value="default">Default</option>
+              <option value="Arial, sans-serif">Arial</option>
+              <option value="Verdana, sans-serif">Verdana</option>
+              <option value="Tahoma, sans-serif">Tahoma</option>
+              <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+              <option value="'Times New Roman', serif">Times New Roman</option>
+              <option value="Georgia, serif">Georgia</option>
+              <option value="Garamond, serif">Garamond</option>
+              <option value="'Courier New', monospace">Courier New</option>
+              <option value="'Lucida Console', monospace">
+                Lucida Console
+              </option>
+              <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+            </select>
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit" id="save">💾 Save Changes</button>
+        </div>
+      </form>
+
+      <div class="chatbot">
+        <img src="cat.png" class="chat-avatar" alt="Chatbot Cat" />
+        <div class="chat-window">
+          <div class="chat-log" id="chatLog">
+            <div class="chat-bubble bot">
+              Hi cutie! 💕 Need help with anything?
+            </div>
+          </div>
+          <input type="text" id="chatInput" placeholder="Ask me something..." />
+        </div>
+      </div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
+
+<div class="form-actions" style="margin-bottom: 50px">
+  <button type="button" class="theme-btn" data-theme="pink">
+    💖 Pastel Pink
+  </button>
+  <button type="button" class="theme-btn" data-theme="lavender">
+    💜 Lavender Haze
+  </button>
+  <button type="button" class="theme-btn" data-theme="mint">
+    🍃 Minty Fresh
+  </button>
+  <button type="button" class="theme-btn" data-theme="peach">
+    🍑 Peachy Keen
+  </button>
+  <button type="button" class="theme-btn" data-theme="sky">☁️ Sky Cloud</button>
+</div>
