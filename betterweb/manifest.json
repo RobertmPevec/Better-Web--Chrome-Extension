@@ -2,10 +2,11 @@
     "manifest_version": 3,
     "name": "BetterWeb",
     "version": "1.0",
+    "description": "Enhance web accessibility with customizable user profiles and AI-powered content adjustments.",
+    "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
     "action": {
       "default_popup": "popup.html"
     },
-    "permissions": ["scripting", "storage", "activeTab"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
@@ -13,7 +14,8 @@
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["content.js"]
+        "js": ["content.js", "tts.js", "googleTTS.js", "config.js"],
+        "css": ["styles.css"]
       }
     ]
   }  
