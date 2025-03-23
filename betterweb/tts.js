@@ -18,7 +18,7 @@ async function speakModifiedSelection() {
     const modifiedText = await getCohereSpokenVersion(selectedText);
     if (!modifiedText) return;
   
-    speakText(modifiedText); 
+    speakWithGoogleTTS(modifiedText); 
 }
 
 async function getCohereSpokenVersion(text) {
