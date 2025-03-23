@@ -2,19 +2,11 @@
     "manifest_version": 3,
     "name": "BetterWeb",
     "version": "1.0",
-<<<<<<< Updated upstream
-    "description": "Enhance web accessibility with customizable user profiles and AI-powered content adjustments.",
-    "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-=======
     "options_page": "options.html",
     "action": {
       "default_popup": "popup.html"
     },
     "permissions": ["scripting", "storage", "activeTab"],
->>>>>>> Stashed changes
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"

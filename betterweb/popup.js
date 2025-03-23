@@ -91,8 +91,4 @@ document.addEventListener('DOMContentLoaded', () => {
         return null;
       }
     }
-<<<<<<< Updated upstream
   });  
-=======
-  });
->>>>>>> Stashed changes
