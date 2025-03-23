@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility Setup</title>
+    <link rel="stylesheet" href="FormPage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Accessibility Setup</h1>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <!-- Step 1: Needs Selection -->
+      <div class="form-step active" id="step1">
+        <h2 class="step-title">What needs would you like to accommodate?</h2>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input
+              type="checkbox"
+              id="visualDisabilities"
+              value="visualDisabilities"
+            />
+            <label for="visualDisabilities">Visual Disabilities</label>
+          </div>
+          <div class="checkbox-item">
+            <input
+              type="checkbox"
+              id="dyslexiaLearningDisabilities"
+              value="dyslexiaLearningDisabilities"
+            />
+            <label for="dyslexiaLearningDisabilities"
+              >Dyslexia/Learning Disabilities</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="adhd" value="adhd" />
+            <label for="adhd">ADHD</label>
+          </div>
+          <div class="checkbox-item">
+            <input
+              type="checkbox"
+              id="photosensitivity"
+              value="photosensitivity"
+            />
+            <label for="photosensitivity">Photosensitivity</label>
+          </div>
+          <div class="checkbox-item">
+            <input
+              type="checkbox"
+              id="neurologicalCognitive"
+              value="neurologicalCognitive"
+            />
+            <label for="neurologicalCognitive"
+              >Neurological/Cognitive Needs</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input
+              type="checkbox"
+              id="motionSensitivity"
+              value="motionSensitivity"
+            />
+            <label for="motionSensitivity">Motion Sensitivity</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="other" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <button id="nextStep1">Next</button>
+      </div>
+
+      <!-- Step 2: Preferences Based on Needs -->
+      <div class="form-step" id="step2">
+        <div id="preferencesContent"></div>
+        <button id="nextStep2">Next</button>
+      </div>
+
+      <!-- Step 3: Auto-alter Experience -->
+      <div class="form-step" id="step3">
+        <h2 class="step-title">Final Step</h2>
+        <div class="checkbox-item">
+          <input type="checkbox" id="autoAlterExperience" />
+          <label for="autoAlterExperience"
+            >(OPTIONAL) I want my web experience to be altered
+            automatically.</label
+          >
+        </div>
+        <button id="submitForm">Submit</button>
+      </div>
+    </div>
+
+    <script src="FormPage.js"></script>
+  </body>
+</html>
