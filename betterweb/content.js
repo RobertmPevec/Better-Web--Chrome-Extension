@@ -44,7 +44,7 @@ function applyDyslexiaFont() {
 
 function applySettings(settings) {
   settings.dyslexiaFont ? applyDyslexiaFont() : removeDyslexiaFont();
-//   settings.darkMode ? applyDarkMode() : removeDarkMode();
+   settings.darkMode ? applyDarkMode() : removeDarkMode();
 }
 
 // On initial load, get settings from chrome.storage
