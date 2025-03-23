@@ -1,42 +1,66 @@
-chrome.storage.local.get(["userData"], function (result) {
+let userData = {};
+let originalFontSize = null;
+let currentFontSize = null;
+
+// Load user preferences and font size on initialization
+chrome.storage.local.get(["userData", "fontSize"], function (result) {
   if (result.userData) {
     console.log("Retrieved user preferences:", result.userData);
-    // Update UI
+    userData = result.userData;
   }
+
+  if (result.fontSize) {
+    currentFontSize = result.fontSize;
+  }
+
+  checkAllUIChanges();
+  applySavedFontSize();
 });
 
+// Listen for changes in storage
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   if (changes.userData) {
     console.log("User preferences updated:", changes.userData.newValue);
-    // Update UI
+    userData = changes.userData.newValue;
+    checkAllUIChanges();
+  }
+
+  if (changes.fontSize) {
+    currentFontSize = changes.fontSize.newValue;
+    applySavedFontSize();
   }
 });
 
 function checkAllUIChanges() {
-  // dark mode
+  console.log("hello from checkAllUIChanges");
+
+  // Dark mode
   if (
-    userData.visualDisabilitiesPreferences.visualSnowDarkMode ||
-    userData.photosensitivityPreferences.useDarkMode
+    userData.visualDisabilitiesPreferences?.visualSnowDarkMode ||
+    userData.photosensitivityPreferences?.useDarkMode
   ) {
     applyDarkMode();
   } else {
     removeDarkMode();
   }
-  // font size
+
+  // Font size
   if (
-    userData.visualDisabilitiesPreferences.lowVisionIncreaseFontSize ||
-    userData.visualDisabilitiesPreferences.glaucomaMacularEnlargedText ||
-    userData.visualDisabilitiesPreferences.presbyopiaIncreaseFontSize ||
-    userData.adhdPreferences.largerFonts
+    userData.visualDisabilitiesPreferences?.lowVisionIncreaseFontSize ||
+    userData.visualDisabilitiesPreferences?.glaucomaMacularEnlargedText ||
+    userData.visualDisabilitiesPreferences?.presbyopiaIncreaseFontSize ||
+    userData.adhdPreferences?.largerFonts
   ) {
-    // call font size increasing function
+    console.log("font size increasing");
+    increaseFontSize();
   } else {
-    // call function to revert it
+    resetFontSize();
   }
-  // dyslexia font
+
+  // Dyslexia font
   if (
-    userData.dyslexiaLearningPreferences.dyslexiaOpenDyslexicFont ||
-    userData.dyslexiaLearningPreferences.dysgraphiaClearFonts
+    userData.dyslexiaLearningPreferences?.dyslexiaOpenDyslexicFont ||
+    userData.dyslexiaLearningPreferences?.dysgraphiaClearFonts
   ) {
     applyDyslexiaFont();
   } else {
@@ -44,7 +68,12 @@ function checkAllUIChanges() {
   }
 }
 
-console.log("content.js is running on this page.");
+function applySavedFontSize() {
+  if (currentFontSize) {
+    document.documentElement.style.fontSize = currentFontSize;
+  }
+}
+
 function applyDyslexiaFont() {
   document.body.style.fontFamily = '"OpenDyslexic", Arial, sans-serif';
 }
@@ -53,8 +82,47 @@ function removeDyslexiaFont() {
   document.body.style.fontFamily = "";
 }
 
+function increaseFontSize() {
+  const root = document.documentElement;
+  let currentSize = window.getComputedStyle(root).fontSize;
+  let sizeValue = parseFloat(currentSize);
+  let sizeUnit = currentSize.replace(sizeValue, "").trim();
+
+  if (!originalFontSize) {
+    originalFontSize = currentSize;
+  }
+
+  const newSizeValue = sizeValue + 3;
+  root.style.fontSize = `${newSizeValue}${sizeUnit}`;
+
+  currentFontSize = `${newSizeValue}${sizeUnit}`;
+
+  // Save to chrome.storage
+  chrome.storage.local.set({ fontSize: currentFontSize });
+
+  console.log(`Font size increased to ${newSizeValue}${sizeUnit}`);
+}
+
+function resetFontSize() {
+  const root = document.documentElement;
+
+  if (originalFontSize) {
+    root.style.fontSize = originalFontSize;
+    currentFontSize = originalFontSize;
+    originalFontSize = null;
+  } else {
+    root.style.fontSize = "";
+    currentFontSize = null;
+  }
+
+  // Save to chrome.storage
+  chrome.storage.local.set({ fontSize: currentFontSize });
+
+  console.log("Font size reset");
+}
+
 function applyDarkMode() {
-  document.documentElement.style.backgroundColor = "#000"; // optional
+  document.documentElement.style.backgroundColor = "#000";
   document.documentElement.style.color = "#fff";
   document.documentElement.style.filter = "invert(1) hue-rotate(180deg)";
 
@@ -75,45 +143,32 @@ function speakHighlightedText(text = null) {
   }
 }
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === "SPEAK_SELECTION") {
-    //speakText(message.text);
-    speakModifiedSelection();
-  }
-});
-
 function removeDarkMode() {
   document.body.style.backgroundColor = "";
   document.body.style.color = "";
-}
-// Settings and Storage
+  document.documentElement.style.filter = "";
 
-// start of "what"
+  const media = document.querySelectorAll("img, picture, video, iframe");
+  media.forEach((el) => {
+    el.style.filter = "";
+  });
+}
+
+// Speech synthesis function
+function speakModifiedSelection() {
+  // Implementation would go here
+}
+
+// Apply settings from chrome.storage
 function applySettings(settings) {
   settings.dyslexiaFont ? applyDyslexiaFont() : removeDyslexiaFont();
-   settings.darkMode ? applyDarkMode() : removeDarkMode();
-  //   settings.darkMode ? applyDarkMode() : removeDarkMode();
 }
 
-// On initial load, get settings from chrome.storage
-chrome.storage.sync.get(["dyslexiaFont", "darkMode"], (settings) => {
-  applySettings(settings);
-});
-
-// Listen for changes in storage to update settings dynamically
-chrome.storage.onChanged.addListener((changes, areaName) => {
-  if (areaName === "sync") {
-    chrome.storage.sync.get(["dyslexiaFont", "darkMode"], (settings) => {
-      applySettings(settings);
-    });
-  }
-});
-// end of "what"
-
-// Cohere API Fixes Section (from File 2)
-
+// Listen for messages to apply fixes
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.type === "applyFix" && message.data) {
+  if (message.action === "SPEAK_SELECTION") {
+    speakHighlightedText();
+  } else if (message.type === "applyFix" && message.data) {
     try {
       const rules =
         typeof message.data === "string"
@@ -130,3 +185,5 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
   }
 });
+
+console.log("content.js is running on this page.");

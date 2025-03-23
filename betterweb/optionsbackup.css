@@ -1,0 +1,185 @@
+/* âœ¨ CUTE THEME STYLES âœ¨ */
+:root {
+  --bg-color: #fff7fc;
+  --card-bg: #ffe0f0;
+  --text-color: #5a4e6b;
+  --accent-color: #ffb6c1;
+  --hover-color: #ff94c2;
+  --button-color: #ff9aa2;
+  --button-hover: #ff6f91;
+  --header-color: #ff6fa7;
+
+  --bubble-bg: #fff0fa;
+  --user-bubble-bg: #ffcee0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* âœ¨ BIG PASTEL BUBBLE BACKGROUND */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff00;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  /*color: var(--header-color);*/
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #a3749c;
+}
+
+.card {
+  width: 85%;
+  margin: 0 auto 1.5rem;
+  padding: 1.2rem 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #d36ba1;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #7a5b7b;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #874d7c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+select,
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: var(--accent-color);
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+button {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+/* ðŸ’¬ Chatbot Styles */
+.chatbot {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--card-bg); /* ðŸŒŸ CHANGED FROM STATIC COLOR */
+  padding: 1rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chat-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chat-log {
+  max-height: 150px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chat-bubble {
+  background-color: var(--bubble-bg);
+  color: var(--text-color);
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* neutral so it works for all themes */
+}
+
+.chat-bubble.bot {
+  align-self: flex-start;
+}
+
+.chat-bubble.user {
+  background-color: var(--bubble-bg);
+  color: var(--text-color);
+}
+
+#chatInput {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--accent-color);
+  background-color: var(--bubble-bg);
+  color: var(--text-color);
+}

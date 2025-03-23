@@ -1,103 +1,477 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>⚙️ BetterWeb Settings 💖</title>
-  <link rel="icon" type="image/png" href="cloud.png" />
-  <link rel="stylesheet" href="options.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>🌸 Welcome to BetterWeb 💖</h1>
-      <p>Customize your browsing experience by selecting the accessibility options that suit your needs.</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚙️ BetterWeb Settings 💖</title>
+    <link rel="icon" type="image/png" href="cloud.png" />
+    <link rel="stylesheet" href="options.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌸 Welcome to BetterWeb 💖</h1>
+        <p>
+          Customize your browsing experience by selecting the accessibility
+          options that suit your needs.
+        </p>
+      </header>
 
-    <form id="settingsForm">
-      <section class="card">
-        <h2>📖 Dyslexia</h2>
-        <p>Enhance readability with a dyslexia-friendly font and improved layout.</p>
-        <div class="form-group">
-          <label><input type="checkbox" id="dyslexiaFont" name="dyslexiaFont" /> Use Dyslexia-friendly Font</label>
-        </div>
-      </section>
+      <form id="settingsForm">
+        <!-- Visual Disabilities Section -->
+        <section class="card">
+          <h2>👀 Visual Disabilities</h2>
+          <p>Customize how visual content is displayed:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="lowVisionIncreaseFontSize"
+                name="lowVisionIncreaseFontSize"
+              />
+              Increase Font Size</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="lowVisionIncreaseContrast"
+                name="lowVisionIncreaseContrast"
+              />
+              Increase Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="colorBlindnessHighContrast"
+                name="colorBlindnessHighContrast"
+              />
+              Color Blindness: High Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="colorBlindnessAvoidRedGreen"
+                name="colorBlindnessAvoidRedGreen"
+              />
+              Color Blindness: Avoid Red/Green</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="cataractsBoldText"
+                name="cataractsBoldText"
+              />
+              Cataracts: Bold Text</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="cataractsHighContrast"
+                name="cataractsHighContrast"
+              />
+              Cataracts: High Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="cataractsReduceGlare"
+                name="cataractsReduceGlare"
+              />
+              Cataracts: Reduce Glare</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="glaucomaMacularEnlargedText"
+                name="glaucomaMacularEnlargedText"
+              />
+              Glaucoma/Macular: Enlarged Text</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="glaucomaMacularHighContrast"
+                name="glaucomaMacularHighContrast"
+              />
+              Glaucoma/Macular: High Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="glaucomaMacularReduceClutter"
+                name="glaucomaMacularReduceClutter"
+              />
+              Glaucoma/Macular: Reduce Clutter</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="presbyopiaIncreaseFontSize"
+                name="presbyopiaIncreaseFontSize"
+              />
+              Presbyopia: Increase Font Size</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="presbyopiaHighContrast"
+                name="presbyopiaHighContrast"
+              />
+              Presbyopia: High Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="visualSnowDarkMode"
+                name="visualSnowDarkMode"
+              />
+              Visual Snow: Dark Mode</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="visualSnowReducedContrast"
+                name="visualSnowReducedContrast"
+              />
+              Visual Snow: Reduced Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="tunnelVisionContentCentered"
+                name="tunnelVisionContentCentered"
+              />
+              Tunnel Vision: Content Centered</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="tunnelVisionNarrowWidth"
+                name="tunnelVisionNarrowWidth"
+              />
+              Tunnel Vision: Narrow Width</label
+            >
+          </div>
+        </section>
 
-      <section class="card">
-        <h2>🌙 Dark Mode</h2>
-        <p>Reduce eye strain with a dark color scheme across websites.</p>
-        <div class="form-group">
-          <label><input type="checkbox" id="darkMode" name="darkMode" /> Enable Dark Mode</label>
-        </div>
-      </section>
+        <!-- Dyslexia/Learning Disabilities Section -->
+        <section class="card">
+          <h2>📖 Dyslexia/Learning Disabilities</h2>
+          <p>Enhance readability with specialized settings:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dyslexiaOpenDyslexicFont"
+                name="dyslexiaOpenDyslexicFont"
+              />
+              Dyslexia: OpenDyslexic Font</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dyslexiaIncreaseLetterSpacing"
+                name="dyslexiaIncreaseLetterSpacing"
+              />
+              Dyslexia: Increase Letter Spacing</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dysgraphiaClearFonts"
+                name="dysgraphiaClearFonts"
+              />
+              Dysgraphia: Clear Fonts</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dysgraphiaStructuredLayout"
+                name="dysgraphiaStructuredLayout"
+              />
+              Dysgraphia: Structured Layout</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dyscalculiaClearNumericFonts"
+                name="dyscalculiaClearNumericFonts"
+              />
+              Dyscalculia: Clear Numeric Fonts</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="dyscalculiaSpacedOutNumbers"
+                name="dyscalculiaSpacedOutNumbers"
+              />
+              Dyscalculia: Spaced Out Numbers</label
+            >
+          </div>
+        </section>
 
-      <section class="card">
-        <h2>🌈 Color Blindness</h2>
-        <p>Adjust color contrasts and hues to optimize web content for color blindness.</p>
-        <div class="form-group">
-          <label><input type="checkbox" id="colorBlind" name="colorBlind" /> Enable Color Blind Mode</label>
-        </div>
-      </section>
+        <!-- ADHD Section -->
+        <section class="card">
+          <h2>🧠 ADHD</h2>
+          <p>Customize your interface for better focus:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="cleanInterface"
+                name="cleanInterface"
+              />
+              Clean Interface</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" id="largerFonts" name="largerFonts" />
+              Larger Fonts</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="minimalVisualClutter"
+                name="minimalVisualClutter"
+              />
+              Minimal Visual Clutter</label
+            >
+          </div>
+        </section>
 
-      <section class="card">
-        <h2>👓 Low Vision</h2>
-        <p>Increase text size and improve overall visibility.</p>
-        <div class="form-group">
-          <label for="textSize">Text Size:</label>
-          <select id="textSize" name="textSize">
-            <option value="default">Default</option>
-            <option value="large">Large</option>
-            <option value="x-large">Extra Large</option>
-          </select>
-        </div>
-      </section>
-      <section class="card">
-        <h2>🖊️ Font Change</h2>
-        <p>Change font to increase visibility</p>
-      
-        <div class="form-group">
-          <label for="fontSelect">Font Style:</label>
-          <select id="fontSelect" name="fontSelect">
-            <option value="default">Default</option>
-            <option value="Arial, sans-serif">Arial</option>
-            <option value="Verdana, sans-serif">Verdana</option>
-            <option value="Tahoma, sans-serif">Tahoma</option>
-            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
-            <option value="'Times New Roman', serif">Times New Roman</option>
-            <option value="Georgia, serif">Georgia</option>
-            <option value="Garamond, serif">Garamond</option>
-            <option value="'Courier New', monospace">Courier New</option>
-            <option value="'Lucida Console', monospace">Lucida Console</option>
-            <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
-          </select>
-        </div>
-      </section>      
+        <!-- Photosensitivity Section -->
+        <section class="card">
+          <h2>✨ Photosensitivity</h2>
+          <p>Reduce visual stimuli that may cause discomfort:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="avoidFlashingElements"
+                name="avoidFlashingElements"
+              />
+              Avoid Flashing Elements</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input type="checkbox" id="useDarkMode" name="useDarkMode" /> Use
+              Dark Mode</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="reduceScreenGlare"
+                name="reduceScreenGlare"
+              />
+              Reduce Screen Glare</label
+            >
+          </div>
+        </section>
 
-      <div class="form-actions">
-        <button type="submit" id="save">💾 Save Changes</button>
+        <!-- Neurological/Cognitive Section -->
+        <section class="card">
+          <h2>🧠 Neurological/Cognitive Needs</h2>
+          <p>Customize your experience for better cognitive processing:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="migraineReduceBrightness"
+                name="migraineReduceBrightness"
+              />
+              Migraine: Reduce Brightness</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="migraineSoftContrast"
+                name="migraineSoftContrast"
+              />
+              Migraine: Soft Contrast</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="migraineRemoveAnimations"
+                name="migraineRemoveAnimations"
+              />
+              Migraine: Remove Animations</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="auditoryProcessingIncreaseFontSize"
+                name="auditoryProcessingIncreaseFontSize"
+              />
+              Auditory Processing: Increase Font Size</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="auditoryProcessingStructuredLayout"
+                name="auditoryProcessingStructuredLayout"
+              />
+              Auditory Processing: Structured Layout</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="autismSpectrumSoftColors"
+                name="autismSpectrumSoftColors"
+              />
+              Autism Spectrum: Soft Colors</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="autismSpectrumStructuredLayout"
+                name="autismSpectrumStructuredLayout"
+              />
+              Autism Spectrum: Structured Layout</label
+            >
+          </div>
+        </section>
+
+        <!-- Motion Sensitivity Section -->
+        <section class="card">
+          <h2>🌀 Motion Sensitivity</h2>
+          <p>Reduce motion and animations for a more comfortable experience:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="reduceScrolling"
+                name="reduceScrolling"
+              />
+              Reduce Scrolling</label
+            >
+          </div>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="reduceAnimations"
+                name="reduceAnimations"
+              />
+              Reduce Animations</label
+            >
+          </div>
+        </section>
+
+        <!-- Auto-alter Experience Section -->
+        <section class="card">
+          <h2>🔄 Auto-alter Experience</h2>
+          <p>Enable automatic web experience alteration:</p>
+          <div class="form-group">
+            <label
+              ><input
+                type="checkbox"
+                id="autoAlterExperience"
+                name="autoAlterExperience"
+              />
+              Enable Automatic Alteration</label
+            >
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit" id="save">💾 Save Changes</button>
+        </div>
+      </form>
+
+      <div class="chatbot">
+        <img src="cat.png" class="chat-avatar" alt="Chatbot Cat" />
+        <div class="chat-window">
+          <div class="chat-log" id="chatLog">
+            <div class="chat-bubble bot">
+              Hi cutie! 💕 Need help with anything?
+            </div>
+          </div>
+          <input type="text" id="chatInput" placeholder="Ask me something..." />
+        </div>
       </div>
-    </form>
 
-    <div class="chatbot">
-      <img src="cat.png" class="chat-avatar" alt="Chatbot Cat" />
-      <div class="chat-window">
-        <div class="chat-log" id="chatLog">
-          <div class="chat-bubble bot">Hi cutie! 💕 Need help with anything?</div>
-        </div>
-        <input type="text" id="chatInput" placeholder="Ask me something..." />
+      <div class="form-actions" style="margin-bottom: 50px">
+        <button type="button" class="theme-btn" data-theme="pink">
+          💖 Pastel Pink
+        </button>
+        <button type="button" class="theme-btn" data-theme="lavender">
+          💜 Lavender Haze
+        </button>
+        <button type="button" class="theme-btn" data-theme="mint">
+          🍃 Minty Fresh
+        </button>
+        <button type="button" class="theme-btn" data-theme="peach">
+          🍑 Peachy Keen
+        </button>
+        <button type="button" class="theme-btn" data-theme="sky">
+          ☁️ Sky Cloud
+        </button>
       </div>
     </div>
-  </div>
 
-  <script src="options.js"></script>
-</body>
+    <script src="options.js"></script>
+  </body>
 </html>
-
-<div class="form-actions" style="margin-bottom: 50px;">
-  <button type="button" class="theme-btn" data-theme="pink">💖 Pastel Pink</button>
-  <button type="button" class="theme-btn" data-theme="lavender">💜 Lavender Haze</button>
-  <button type="button" class="theme-btn" data-theme="mint">🍃 Minty Fresh</button>
-  <button type="button" class="theme-btn" data-theme="peach">🍑 Peachy Keen</button>
-  <button type="button" class="theme-btn" data-theme="sky">☁️ Sky Cloud</button>
-</div>
