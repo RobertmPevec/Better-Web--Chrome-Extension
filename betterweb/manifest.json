@@ -1,26 +1,4 @@
 {
-<<<<<<< Updated upstream
-    "manifest_version": 3,
-    "name": "BetterWeb",
-    "version": "1.0",
-    "options_page": "options.html",
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "permissions": ["scripting", "storage", "activeTab"],
-    "host_permissions": ["<all_urls>"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js", "tts.js", "googleTTS.js", "config.js"],
-        "css": ["styles.css"]
-      }
-    ]
-  }  
-=======
   "manifest_version": 3,
   "name": "BetterWeb",
   "version": "1.0",
@@ -46,4 +24,3 @@
     }
   ]
 }
->>>>>>> Stashed changes
