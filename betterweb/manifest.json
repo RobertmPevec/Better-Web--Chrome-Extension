@@ -6,7 +6,7 @@
     "action": {
       "default_popup": "popup.html"
     },
-    "permissions": ["scripting", "storage", "activeTab"],
+    "permissions": ["contextMenus", "scripting", "storage", "activeTab"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
@@ -14,8 +14,7 @@
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["content.js", "tts.js", "googleTTS.js", "config.js"],
-        "css": ["styles.css"]
+        "js": ["content.js", "tts.js", "googleTTS.js", "config.js"]
       }
     ]
   }  
